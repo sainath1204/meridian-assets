@@ -1,0 +1,16 @@
+{
+  "name": "assets",
+  "port": 8080,
+  "entrypoint": "app:app",
+  "ingress": "internal",
+  "peers": {
+    "edge": {
+      "url": "http://edge:8080",
+      "repository": "https://github.com/sainath1204/meridian-edge"
+    },
+    "bundles": {
+      "url": "http://bundles:8080",
+      "repository": "https://github.com/sainath1204/meridian-bundles"
+    }
+  }
+}
